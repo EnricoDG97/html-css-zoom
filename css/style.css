@@ -5,16 +5,61 @@
 
 .display-zoom {
     height: calc(100vh - 100px);
-
+    position: relative;
+    color: white;
     /* test */
     background-color: darkslategray;
 }
+
+.display-zoom .display-zoom-online {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 40px 60px 0 60px;
+
+    overflow-y: auto;
+}
+
+.display-zoom .display-zoom-online .zoom-profile-pic {
+    background-color: green;
+    width: calc(100% / 7 - 5px);
+    height: calc(100% / 5 - 5px);
+    padding: 5px;
+    /* test */
+
+    position: relative;
+}
+
+.zoom-profile-nickname {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    /* test */
+    background-color: #4bc800;
+}
+
+.speaker-controls {
+    position: absolute;
+    top: 4px;
+    right: 8px
+}
+
+
+
+
+
+/* ///// CONTROLS - BOTTOM PAGE SECTION  */
 
 .display-controls {
     height: 100px;
     background-color: #222222;
     display: flex;
     justify-content: space-between;
+    color: white;
 }
 
 .display-controls .controls {
@@ -28,7 +73,7 @@
 
 .controls.left {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     text-align: center;
     padding-left: 30px;
 }
@@ -40,16 +85,23 @@
     text-align: center;
 }
 
+.controls.middle .icon-ctrl.share-screen .fa.fa-share-square-o {
+    color: #4bc800;
+}
+
 .controls.right {
     display: flex;
     text-align: center;
     height: 100%;
     padding: 0 30px;
     background-color: #4a4a4a;
+}
+
+.controls.right .end-meeting {
     color: red;
 }
 
 .display-controls .controls .icon-ctrl i.fa {
-    font-size: 3em;
-    padding: 4px 4px;
+    font-size: 2.5em;
+    padding: 12px 4px;
 }

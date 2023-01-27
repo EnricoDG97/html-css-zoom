@@ -7,8 +7,7 @@
     height: calc(100vh - 100px);
     position: relative;
     color: white;
-    /* test */
-    background-color: darkslategray;
+    background-color: black;
 }
 
 .display-zoom .display-zoom-online {
@@ -39,7 +38,6 @@
     position: absolute;
     bottom: 5px;
     left: 5px;
-
 }
 
 .speaker-controls {
@@ -47,8 +45,15 @@
     top: 4px;
     right: 8px;
     color: white;
+    display: flex;
+    gap: 10px;
 }
 
+.speaker-controls .sc {
+    background-color: #4a4a4a;
+    border-radius: 4px;
+    padding: 3px 6px;
+}
 
 
 
@@ -68,7 +73,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-
+    
     font-size: 14px;
 }
 

@@ -27,10 +27,15 @@
     background-color: green;
     width: calc(100% / 7 - 5px);
     height: calc(100% / 5 - 5px);
-    padding: 5px;
+    /* padding: 5px; */
     /* test */
 
     position: relative;
+}
+
+.zoom-profile-pic img {
+    height: 100%;
+    width: 100%;
 }
 
 .zoom-profile-nickname {

@@ -24,12 +24,9 @@
 }
 
 .display-zoom .display-zoom-online .zoom-profile-pic {
-    background-color: green;
     width: calc(100% / 7 - 5px);
     height: calc(100% / 5 - 5px);
-    /* padding: 5px; */
-    /* test */
-
+    padding: 5px;
     position: relative;
 }
 
@@ -40,17 +37,16 @@
 
 .zoom-profile-nickname {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 5px;
+    left: 5px;
 
-    /* test */
-    background-color: #4bc800;
 }
 
 .speaker-controls {
     position: absolute;
     top: 4px;
-    right: 8px
+    right: 8px;
+    color: white;
 }
 
 
